@@ -167,6 +167,7 @@ class SpectrumModel: ObservableObject {
 
 // MARK: SpectrumView
 
+@available(iOS 14.0, *)
 struct SpectrumView: View {
     @StateObject var spectrum = SpectrumModel()
     var node: Node
@@ -468,6 +469,7 @@ struct VerticalAxis: View {
 
 // MARK: SpectrumView_Previews
 
+@available(iOS 14.0, *)
 struct SpectrumView_Previews: PreviewProvider {
     static var previews: some View {
         SpectrumView(Mixer())

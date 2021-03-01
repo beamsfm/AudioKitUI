@@ -164,6 +164,7 @@ class SpectrogramModel: ObservableObject {
 
 // MARK: SpectrogramView
 
+@available(iOS 14.0, *)
 struct SpectrogramView: View {
     @StateObject var spectrogram = SpectrogramModel()
     var node: Node
@@ -279,6 +280,7 @@ struct SpectrogramView: View {
 
 // MARK: Preview
 
+@available(iOS 14.0, *)
 struct SpectrogramView_Previews: PreviewProvider {
     static var previews: some View {
         return SpectrogramView(node: Mixer())

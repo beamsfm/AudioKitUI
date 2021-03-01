@@ -30,6 +30,7 @@ class AmplitudeModel: ObservableObject {
     }
 }
 
+@available(iOS 14.0, *)
 struct AmplitudeView: View {
     @StateObject var amplitudeModel = AmplitudeModel()
     var node: Node
@@ -124,6 +125,7 @@ struct AmplitudeView: View {
     }
 }
 
+@available(iOS 14.0, *)
 struct AmplitudeView_Previews: PreviewProvider {
     static var previews: some View {
         AmplitudeView(Mixer())

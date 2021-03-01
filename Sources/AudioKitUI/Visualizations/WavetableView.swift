@@ -20,6 +20,7 @@ class WavetableModel: ObservableObject {
     }
 }
 
+@available(iOS 14.0, *)
 struct WavetableView: View {
     @StateObject var wavetableModel = WavetableModel()
     @State var strokeColor = Color.white
@@ -69,6 +70,7 @@ struct WavetableView: View {
     }
 }
 
+@available(iOS 14.0, *)
 struct WavetableView_Previews: PreviewProvider {
     static var previews: some View {
         WavetableView(node: DynamicOscillator())

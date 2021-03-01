@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "AudioKitUI",
     platforms: [
-        .macOS(.v11), .iOS(.v14)
+        .macOS(.v11), .iOS(.v13)
     ],
     products: [
         .library(
@@ -19,7 +19,7 @@ let package = Package(
     targets: [
         .target(
             name: "AudioKitUI",
-            dependencies: ["AudioKit"]),
+			dependencies: ["AudioKit"]),
         .testTarget(
             name: "AudioKitUITests",
             dependencies: ["AudioKitUI"]),

@@ -71,6 +71,7 @@ class FFTModel: ObservableObject {
     }
 }
 
+@available(iOS 14.0, *)
 public struct FFTView: View {
     @StateObject var fft = FFTModel()
     private var linearGradient: LinearGradient
@@ -128,8 +129,9 @@ public struct FFTView: View {
     }
 }
 
+@available(iOS 14.0, *)
 struct FFTView_Previews: PreviewProvider {
-    static var previews: some View {
+	static var previews: some View {
         FFTView(Mixer())
     }
 }
